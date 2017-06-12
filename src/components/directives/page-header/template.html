@@ -1,0 +1,26 @@
+<div class="container head">
+  <div class="row">
+    <div class="col-md-6">
+      <a href="https://midtrans.com/">
+        <img src="https://placeholdit.co//i/174x30?" alt="Midtrans">
+      </a>
+    </div>
+    <div class="col-md-6">
+      <div class="top-cart-widget">
+        <div class="compact">
+          <p class="text-right">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <span ng-if="itemCount === 0">Your cart is empty</span>
+            <a ui-sref="cart" ng-if="itemCount > 0">
+              <span>You have {{itemCount}} item(s), {{totalPrice|formatMoney}}</span>
+            </a>
+            
+          </p>
+        </div>
+        <div class="complete"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <hr class="top-off">
+</div>
